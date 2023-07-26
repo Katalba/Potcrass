@@ -8,7 +8,7 @@ const SpinningText = ({ text }) => {
   return (
     <>
       <div className="spinningText absolute w-[100%] h-[100%] grid place-item-center z-20">
-        <p className="text-[30px] text-white">
+        <p className="text-[20px] md:text-[30px] text-white">
           {text.split('').map((letra, i) => (
             <span key={i} style={{ transform: `rotate(${deg * i}deg)` }}>
               {letra}
@@ -21,7 +21,7 @@ const SpinningText = ({ text }) => {
 };
 
 SpinningText.propTypes = {
-  text: PropTypes.string.isRequired, // Specify the expected data type (string) and mark it as required
+  text: PropTypes.string.isRequired, 
 };
 
 export default SpinningText;
