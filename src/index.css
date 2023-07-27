@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap');
 
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +9,7 @@
 html {
   font-family: 'Poppins', 'sans-serif';
 }
+
 
 @layer components {
   .spinningText {
@@ -38,28 +40,105 @@ html {
 
   }
 
-  .macetas {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/barro-pintada.jpeg?alt=media&token=3f1b45be-725c-4d6e-8fde-8e4491ddcb76);
-    background-position: center;
-    background-size: cover;
-  }
-
   .suculentas {
     background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/sedumMorganianum.jpg?alt=media&token=00fae6ba-ccd5-4f6d-97aa-98f953c7a3a3);
-    background-position: center;
-    background-size: cover;
   }
 
   .cactus {
     background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/ZebraCactus.jpg?alt=media&token=fb512145-8e9f-4901-9962-860db54444ec);
-    background-position: center;
-    background-size: cover;
   }
 
   .regalos {
     background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/packing-pintar.jpg?alt=media&token=e5538760-ede1-4efc-9734-2dd19ca8e005);
+  }
+
+  .macetas {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/barro-pintada.jpeg?alt=media&token=3f1b45be-725c-4d6e-8fde-8e4491ddcb76);
+  }
+
+  .macetas,
+  .cactus,
+  .suculentas,
+  .regalos {
+    display: block;
+    width: 18rem;
+    height: 18rem;
+    cursor: pointer;
+    background-size: 120%;
+    background-position: no-repeat 100% 50%;
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .macetas,
+    .cactus,
+    .suculentas,
+    .regalos {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .bgGradient {
+      width: 15rem;
+      height: 15rem;
+      line-height: 15rem;
+    }
+
+  }
+
+  .macetas:hover,
+  .cactus:hover,
+  .suculentas:hover,
+  .regalos:hover {
+    box-shadow: 0px .5rem 2rem rgba(0, 0, 0, .75);
+    background-position: 0% 50%;
+  }
+
+  .macetas:hover .bgGradient,
+  .cactus:hover .bgGradient,
+  .suculentas:hover .bgGradient,
+  .regalos:hover .bgGradient {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/gradient.png?alt=media&token=d0a3f7a5-aae8-4b0c-9f0c-396b97a17890);
+    transform: rotate(-45deg) translate(0px) rotate(-315deg);
+    background: rgba(102, 51, 153, 0.5);
+    width: 18rem;
+    letter-spacing: 1rem;
+    line-height: 18rem;
+    height: 18rem;
+    margin-top: -9rem;
+    margin-left: -9rem;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    letter-spacing: 1.5s ease-out;
+  }
+
+  .bgGradient {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.5rem;
+    margin-left: -2.5rem;
+    color: #fff;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transform: rotate(-180deg) translate(-5rem) rotate(180deg);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+  .bg-gradientNav {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/fondo.webp?alt=media&token=230ef077-d0cd-48f5-930a-87adc5be2185);
     background-position: center;
     background-size: cover;
   }
+
+
 
 }

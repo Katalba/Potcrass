@@ -1,29 +1,34 @@
+import Title from "../../Title/Title";
 
 const Categories = () => {
   return (
-    <section className='relative flex-row md:flex p-5'>
-      <div className="relative suculentas w-[90%] md:w-[25%] h-[60vh] m-5 saturate-50">
-        <div className="absolute w-full h-full grid place-items-center">
-          <h3>Suculentas</h3>
+    <>
+    <Title title={'Explora nuestras categorías'} />
+    <section className='relative flex-row justify-center md:flex md:h-[100vh] p-5 w-full space-x-5'>
+        <div className="relative suculentas saturate-50 ">
+          <div className="absolute grid place-items-center bgGradient">
+            <h3 className="text-[15px] font-bold">Suculentas</h3>
+          </div>
         </div>
-      </div>
-      <div className="relative cactus w-[90%] md:w-[25%] h-[60vh] m-5 saturate-50">
-        <div className="absolute w-full h-full grid place-items-center">
-          <h3>Cactus</h3>
+        <div className="relative cactus saturate-50 ">
+          <div className="absolute grid place-items-center bgGradient">
+            <h3 className="text-[15px] font-bold">Cactus</h3>
+          </div>
         </div>
-      </div>
-      <div className="relative macetas w-[90%] md:w-[25%] h-[60vh] m-5 saturate-50">
-        <div className="absolute w-full h-full grid place-items-center">
-          <h3>Macetas</h3>
+        <div className="relative macetas saturate-50 ">
+          <div className="absolute grid place-items-center bgGradient">
+            <h3 className="text-[15px] font-bold">Macetas</h3>
+          </div>
         </div>
-      </div>
-      <div className="relative regalos w-[90%] md:w-[25%] h-[60vh] m-5 saturate-50">
-        <div className="absolute w-full h-full grid place-items-center">
-          <h3>Regalos</h3>
+        <div className="relative regalos saturate-50 ">
+          <div className="absolute grid place-items-center bgGradient rounded-full">
+            <h3 className="text-[15px] font-bold">Regalos</h3>
+          </div>
         </div>
-      </div>
     </section>
+    </>
   );
 }
 
 export default Categories;
+
