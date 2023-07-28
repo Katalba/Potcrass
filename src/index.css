@@ -60,7 +60,6 @@ html {
   .cactus,
   .suculentas,
   .regalos {
-    display: block;
     width: 18rem;
     height: 18rem;
     cursor: pointer;
@@ -69,24 +68,6 @@ html {
     border-radius: 50%;
     transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
     box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
-
-  }
-
-  @media screen and (max-width: 640px) {
-
-    .macetas,
-    .cactus,
-    .suculentas,
-    .regalos {
-      width: 15rem;
-      height: 15rem;
-    }
-
-    .bgGradient {
-      width: 15rem;
-      height: 15rem;
-      line-height: 15rem;
-    }
 
   }
 
@@ -102,7 +83,6 @@ html {
   .cactus:hover .bgGradient,
   .suculentas:hover .bgGradient,
   .regalos:hover .bgGradient {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/gradient.png?alt=media&token=d0a3f7a5-aae8-4b0c-9f0c-396b97a17890);
     transform: rotate(-45deg) translate(0px) rotate(-315deg);
     background: rgba(102, 51, 153, 0.5);
     width: 18rem;
@@ -116,21 +96,51 @@ html {
   }
 
   .bgGradient {
-    display: block;
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    line-height: 5rem;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
     left: 50%;
     top: 50%;
-    margin-top: -2.5rem;
-    margin-left: -2.5rem;
+    margin-top: -3rem;
+    margin-left: -3rem;
     color: #fff;
     border-radius: 50%;
     background-color: blueviolet;
-    transform: rotate(-180deg) translate(-5rem) rotate(180deg);
+    transform: rotate(-180deg) translate(-6rem) rotate(180deg);
     box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
     transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .macetas:hover,
+    .cactus:hover,
+    .suculentas:hover,
+    .regalos:hover {
+      display: none;
+    }
+
+    .macetas:hover .bgGradient,
+    .cactus:hover .bgGradient,
+    .suculentas:hover .bgGradient,
+    .regalos:hover .bgGradient {
+      display: none;
+    }
+
+    .bgGradient {
+      width: 18rem;
+      height: 18rem;
+      line-height: 18rem;
+      margin-top: -9rem;
+      margin-left: -9rem;
+      margin-top: none;
+      margin-left: none;
+      color: #fff;
+      border-radius: 50%;
+      background-color: rgba(102, 51, 153, 0.5);
+      transform: none;
+      box-shadow: none;
+    }
   }
 
   .bg-gradientNav {
