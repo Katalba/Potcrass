@@ -1,3 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: 'Poppins', 'sans-serif';
+}
+
+@layer components {
+  .spinningText {
+    animation: spin 10s linear infinite;
+  }
+
+  .spinningText span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 0 15rem;
+  }
+
+  @media screen and (max-width: 680px) {
+    .spinningText span {
+      transform-origin: 0 7.5rem;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(45deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+
+  }
+
+  .macetas {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/barro-pintada.jpeg?alt=media&token=3f1b45be-725c-4d6e-8fde-8e4491ddcb76);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .suculentas {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/sedumMorganianum.jpg?alt=media&token=00fae6ba-ccd5-4f6d-97aa-98f953c7a3a3);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .cactus {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/ZebraCactus.jpg?alt=media&token=fb512145-8e9f-4901-9962-860db54444ec);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .regalos {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cactusproject-54bf0.appspot.com/o/packing-pintar.jpg?alt=media&token=e5538760-ede1-4efc-9734-2dd19ca8e005);
+    background-position: center;
+    background-size: cover;
+  }
+
+}
