@@ -9,6 +9,4 @@ use('potcrassdb')
 //     stock: '20'
 //   })
 
-  db.products.find({})
-
-
+db.products.find({})
