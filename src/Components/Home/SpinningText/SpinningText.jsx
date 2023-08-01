@@ -1,5 +1,4 @@
 
-import PropTypes from 'prop-types';
 
 const SpinningText = ({ text }) => {
   const length = text.length;
@@ -18,10 +17,6 @@ const SpinningText = ({ text }) => {
       </div>
     </>
   );
-};
-
-SpinningText.propTypes = {
-  text: PropTypes.string.isRequired, 
 };
 
 export default SpinningText;
