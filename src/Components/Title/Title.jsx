@@ -1,3 +1,4 @@
+
 const Title = ({ title }) => {
   return (
     <section className='m-10 text-center'>
@@ -6,4 +7,4 @@ const Title = ({ title }) => {
   )
 }
 
-export default Title
+export default Title;

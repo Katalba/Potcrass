@@ -17,4 +17,6 @@ const SpinningText = ({ text }) => {
   )
 }
 
-export default SpinningText
+export default SpinningText;
+
+
