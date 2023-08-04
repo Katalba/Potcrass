@@ -1,5 +1,5 @@
-import Header from "./Header/Header";
-import Categories from "./Categories.jsx/Categories";
+import Header from './Header/Header'
+import Categories from './Categories.jsx/Categories'
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       <Header />
       <Categories />
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home
