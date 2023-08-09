@@ -25,7 +25,7 @@ html {
 
   @media screen and (min-width: 1536px) {
     .spinningText span {
-      transform-origin: 0 22.5rem;
+      transform-origin: 0 20rem;
     }
   }
 
@@ -154,7 +154,6 @@ html {
     background-position: center;
     background-size: cover;
   }
-
 
 
 }

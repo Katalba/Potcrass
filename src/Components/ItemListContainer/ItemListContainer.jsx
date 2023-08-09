@@ -1,8 +1,16 @@
+import Item from '../Item/Item'
+
 const ItemListContainer = () => {
   return (
-    <div>
-      <h1>categorias</h1>
-    </div>
+
+    <section className='w-full h-auto'>
+      <div className='w-full flex flex-wrap justify-center'>
+        <Item />
+        <Item />
+        <Item />
+      </div>
+    </section>
+
   )
 }
 
