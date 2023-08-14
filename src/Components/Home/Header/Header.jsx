@@ -1,4 +1,3 @@
-import Nav from '../../Navbar/Nav'
 import SpinningText from '../SpinningText/SpinningText'
 import { BsArrowRight } from 'react-icons/bs'
 
@@ -17,7 +16,6 @@ const Header = () => {
         <p className='text-[13px] md:text-[15px]'>Da un vistazo a nuestras suculentas de colección.</p>
         <button className='bg-slate-900 rounded-md text-white w-[110px] h-[30px] md:w-[150px] md:h-[40px] flex items-center justify-center text-[13px] md:text-[15px]'>shop now <BsArrowRight className='ml-4' /></button>
       </div>
-      <Nav />
     </header>
   )
 }

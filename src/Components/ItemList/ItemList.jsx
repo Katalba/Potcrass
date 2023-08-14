@@ -5,10 +5,10 @@ const ItemList = ({ products, plantilla }) => {
   return (
     <>
       {
-        plantilla === 'item'
-          ? products.map(product => <Item item={product} key={product.id} />)
-          : products.map(product => <ItemCart item={product} key={product.id} />)
-      }
+         plantilla === 'item'
+           ? products.map(product => <Item item={product} key={product.id} />)
+           : products.map(product => <ItemCart item={product} key={product.id} />)
+       }
     </>
   )
 }
